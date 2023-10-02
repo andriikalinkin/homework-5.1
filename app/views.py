@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+
+def index(request):
+    return HttpResponse("Index page.")
+
+
+def generate_teachers(request):
+    return HttpResponse("Generate_teachers page.")
