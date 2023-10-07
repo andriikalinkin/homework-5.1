@@ -10,4 +10,4 @@ def index(request):
 def generate_teachers(request):
     teachers = Teacher.objects.all()
 
-    return render(request, "generate_teachers.html", {'teachers': teachers})
+    return render(request, "generate_teachers.html", {"teachers": teachers})
